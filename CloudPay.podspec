@@ -21,11 +21,11 @@ Pod::Spec.new do |s|
     移动端ios,接入收银台, 支持支付宝 微信等平台
                        DESC
 
-  s.homepage         = 'https://github.com/ZhengSu/CloudPay'
+  s.homepage         = 'https://github.com/ZhengSu/CloudPaySDK'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'ZhengSu' => '15652618600@163.com' }
-  s.source           = { :git => 'https://github.com/ZhengSu/CloudPay.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/ZhengSu/CloudPaySDK.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '10.0'

@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '12.0'
+source 'https://github.com/CocoaPods/Specs.git'
+target 'CloudPay_Example' do
+  pod 'CloudPay', :path => '../'
+
+  target 'CloudPay_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

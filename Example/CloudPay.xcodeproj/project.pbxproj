@@ -43,7 +43,7 @@
 		1926D0892903E1890064345B /* YYWKWebVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYWKWebVC.h; sourceTree = "<group>"; };
 		1926D08F2903E3CF0064345B /* CloudPay_Example.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CloudPay_Example.entitlements; sourceTree = "<group>"; };
 		1E487D80FB45FFB0E527411D /* Pods-CloudPay_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CloudPay_Example.release.xcconfig"; path = "Target Support Files/Pods-CloudPay_Example/Pods-CloudPay_Example.release.xcconfig"; sourceTree = "<group>"; };
-		46AEDF9770488A1010510587 /* CloudPay.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = CloudPay.podspec; path = ../CloudPay.podspec; sourceTree = "<group>"; };
+		46AEDF9770488A1010510587 /* CloudPay.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = CloudPay.podspec; path = ../CloudPay.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		6003F58A195388D20070C39A /* CloudPay_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CloudPay_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -528,7 +528,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CloudPay/CloudPay-Prefix.pch";
 				INFOPLIST_FILE = "CloudPay/CloudPay-Info.plist";
-				MARKETING_VERSION = 0.0.1;
+				MARKETING_VERSION = 0.1.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = com.honghuotai.hhtuser;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -552,7 +552,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CloudPay/CloudPay-Prefix.pch";
 				INFOPLIST_FILE = "CloudPay/CloudPay-Info.plist";
-				MARKETING_VERSION = 0.0.1;
+				MARKETING_VERSION = 0.1.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = com.honghuotai.hhtuser;
 				PRODUCT_NAME = "$(TARGET_NAME)";

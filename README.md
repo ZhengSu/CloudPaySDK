@@ -4,11 +4,12 @@
 ### 第一步: 集成SDK
 CocoaPods:
 
-1.  在 Podfile 中添加 ```pod  'CloudPay```
+
+1.  在 Podfile 中添加 ```pod 'CloudPay','0.1.2' ```
 2.  执行 ```pod install``` 或 ```pod update```
 3.  导入头文件``` #import "CloudPay.h"```
 
-         pod  'CloudPay' 
+         pod 'CloudPay','0.1.2' 
 
 ### 第二步: 注册微信appid ，设置Associated Domains
 

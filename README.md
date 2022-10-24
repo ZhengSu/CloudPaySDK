@@ -5,11 +5,11 @@
 CocoaPods:
 
 
-1.  在 Podfile 中添加 ```pod 'CloudPay','0.1.2' ```
+1.  在 Podfile 中添加 ```pod 'CloudPay' ```
 2.  执行 ```pod install``` 或 ```pod update```
-3.  导入头文件``` #import "CloudPay.h"```
-
-         pod 'CloudPay','0.1.2' 
+3.  导入头文件``` #import "CloudPay/CloudPay.h" ```
+         
+         pod 'CloudPay'
 
 ### 第二步: 注册微信appid ，设置Associated Domains
 
@@ -23,7 +23,7 @@ CocoaPods:
 在 AppDelegate.m 文件中，增加引用代码：
 
 ```
-#import "CloudPay.h"
+#import "CloudPay/CloudPay.h" 
 ```
 1.调用API前，需要先向微信注册您的APPID，代码如下：
 
@@ -41,7 +41,7 @@ CocoaPods:
 引用头文件：
 
 ```
-#import "CloudPay.h"
+#import "CloudPay/CloudPay.h" 
 ```
 
 ```

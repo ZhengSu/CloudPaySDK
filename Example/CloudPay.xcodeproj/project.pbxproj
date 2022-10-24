@@ -530,7 +530,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CloudPay/CloudPay-Prefix.pch";
 				INFOPLIST_FILE = "CloudPay/CloudPay-Info.plist";
-				MARKETING_VERSION = 0.1.1;
+				MARKETING_VERSION = 0.1.2;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = com.yonyou.trip;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -556,7 +556,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CloudPay/CloudPay-Prefix.pch";
 				INFOPLIST_FILE = "CloudPay/CloudPay-Info.plist";
-				MARKETING_VERSION = 0.1.1;
+				MARKETING_VERSION = 0.1.2;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = com.yonyou.trip;
 				PRODUCT_NAME = "$(TARGET_NAME)";

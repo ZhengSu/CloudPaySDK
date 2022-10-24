@@ -8,7 +8,7 @@
 
 #import "YYWKWebVC.h"
 #import <WebKit/WebKit.h>
-#import "CloudPay.h"
+#import <CloudPay/CloudPay.h>
 @interface YYWKWebVC ()
 @property (nonatomic, strong) WKWebView *  webView;
 @property (nonatomic, strong) NSString *payResulturl;

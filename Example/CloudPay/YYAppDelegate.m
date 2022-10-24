@@ -7,7 +7,7 @@
 //
 
 #import "YYAppDelegate.h"
-#import "CloudPay.h"
+#import <CloudPay/CloudPay.h>
 
 @implementation YYAppDelegate
 

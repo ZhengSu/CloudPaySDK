@@ -9,7 +9,7 @@
 #import <WebKit/WebKit.h>
 #define CLOUDPAY_RESULT @"CLOUDPAY_RESULT"
 
-
+@class WKWebViewJavascriptBridge;
 typedef NS_ENUM(NSInteger, CloudPay_Status)
 {
     CloudPay_DataError = 0,         //【订单信息有误】
@@ -35,6 +35,8 @@ NS_ASSUME_NONNULL_BEGIN
 - (BOOL)registerApp:(NSString *)appid universalLink:(NSString *)universalLink;
 
 
+
+#pragma mark 如果项目中 没有使用 WKWebViewJavascriptBridge,则调用该方法
 /*! @brief 处理H5返回的订单信息，从而根据用户选择拉起【微信】或【支付宝】
  *
  * @param webView  WKWebView
@@ -42,6 +44,17 @@ NS_ASSUME_NONNULL_BEGIN
  * @param failure  用来处理支付状态，比如用户【未安装微信】或【未安装支付宝】
  */
 - (void)cloudPayWithWebview:(WKWebView *)webView success:(void (^)(NSString *resultUrl))success failure:(void(^)(CloudPay_Status status))failure;
+
+
+#pragma mark 如果项目中使用了WKWebViewJavascriptBridge,则调用该方法
+/*! @brief 处理H5返回的订单信息，从而根据用户选择拉起【微信】或【支付宝】
+ *
+ * @param webView  WKWebView
+ * @param success  返回支付结果的URL
+ * @param failure  用来处理支付状态，比如用户【未安装微信】或【未安装支付宝】
+ */
+- (void)cloudPayWithWebview:(WKWebView *)webView WebViewJavascriptBridge:(WKWebViewJavascriptBridge*)bridge  success:(void (^)(NSString *resultUrl))success failure:(void(^)(CloudPay_Status status))failure;
+
 
 
 /*! @brief 【支付宝】通过URL Schemes 启动App时传递的数据

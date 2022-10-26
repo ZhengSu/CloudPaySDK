@@ -53,8 +53,25 @@ static CloudPay *manager = nil;
     return [WXApi registerApp:appid universalLink:universalLink];
 }
 
+#pragma mark 如果项目中使用了WKWebViewJavascriptBridge,则调用该方法
+/*! @brief 处理H5返回的订单信息，从而根据用户选择拉起【微信】或【支付宝】
+ *
+ * @param webView  WKWebView
+ * @param success  返回支付结果的URL
+ * @param failure  用来处理支付状态，比如用户【未安装微信】或【未安装支付宝】
+ */
+- (void)cloudPayWithWebview:(WKWebView *)webView WebViewJavascriptBridge:(WKWebViewJavascriptBridge*)bridge  success:(void (^)(NSString *resultUrl))success failure:(void(^)(CloudPay_Status status))failure{
+    
+    self.bridge = bridge;
+    
+    [self cloudPayWithWebview:webView success:success failure:failure];
+}
 - (void)cloudPayWithWebview:(WKWebView *)webView success:(void (^)(NSString *resultUrl))success failure:(void(^)(CloudPay_Status status))failure{
-    self.bridge = [WKWebViewJavascriptBridge bridgeForWebView:webView];
+    
+    if(self.bridge == nil){
+        self.bridge = [WKWebViewJavascriptBridge bridgeForWebView:webView];
+    }
+    
     
     [self.bridge callHandler:@"registerAppid" data:@{@"appid":self.appid,@"universalLink":self.universalLink} responseCallback:^(id responseData) {
         NSLog(@"注册成功");

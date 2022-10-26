@@ -1,0 +1,6 @@
+framework module Pods_CloudPay_Tests {
+  umbrella header "Pods-CloudPay_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

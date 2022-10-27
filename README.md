@@ -43,10 +43,26 @@ CocoaPods:
 ```
 #import "CloudPay/CloudPay.h" 
 ```
+如果项目中本身就使用了`WKWebViewJavascriptBridge`则调用如下方法：
 
 ```
-    [[CloudPay defaultManager] cloudPayWithWebview:self.webView success:^(NSString * _Nonnull resultUrl) {
+      [[CloudPay defaultManager] cloudPayWithWebview:self.webView WebViewJavascriptBridge:self.bridge success:^(NSString * _Nonnull resultUrl) {
+        self.payResulturl = resultUrl;
 
+    } failure:^(CloudPay_Status status) {
+
+        if(status == CloudPay_WXAppUnInstalled){
+            //提示用户 【请先安装微信】
+        }else if(status == CloudPay_ALiPayAppUninstall){
+            //提示用户 【请先安装支付宝】
+        }
+    }];
+```
+
+否则调用不带bridge的方法：
+
+```
+ [[CloudPay defaultManager] cloudPayWithWebview:self.webView success:^(NSString * _Nonnull resultUrl) {
         self.payResulturl = resultUrl;
 
     } failure:^(CloudPay_Status status) {

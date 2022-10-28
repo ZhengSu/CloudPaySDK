@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "8DC254EF0E13B1B31C1F32F5271BB044"
-               BuildableName = "CloudPay.framework"
+               BuildableName = "CloudPay"
                BlueprintName = "CloudPay"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
@@ -51,7 +51,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "8DC254EF0E13B1B31C1F32F5271BB044"
-            BuildableName = "CloudPay.framework"
+            BuildableName = "CloudPay"
             BlueprintName = "CloudPay"
             ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>

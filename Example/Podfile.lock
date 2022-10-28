@@ -1,6 +1,6 @@
 PODS:
   - AliPay_SDK (15.6.5)
-  - CloudPay (0.1.6):
+  - CloudPay (0.2.0):
     - AliPay_SDK
     - WebViewJavascriptBridge
     - WechatOpenSDK
@@ -22,7 +22,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   AliPay_SDK: 4f94ac544191588946581809b3ad34d1c3e30a83
-  CloudPay: d0b37d054d354c3cd3f545c1e596c059c9b1bd1e
+  CloudPay: 83ac052e16b9503e009d1c7a77270b17c8b1a1ed
   WebViewJavascriptBridge: 7f5bc4d3581e672e8f32bd0f812d54bc69bb8e29
   WechatOpenSDK: 2f0ae448c7525cb5c27db5f7aa0f568de0988fa4
 

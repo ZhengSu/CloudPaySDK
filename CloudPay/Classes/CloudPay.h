@@ -6,9 +6,9 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <WebKit/WebKit.h>
+//#import <WebKit/WebKit.h>
 #define CLOUDPAY_RESULT @"CLOUDPAY_RESULT"
-
+@class WKWebView;
 @class WKWebViewJavascriptBridge;
 typedef NS_ENUM(NSInteger, CloudPay_Status)
 {

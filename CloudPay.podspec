@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'CloudPay'
-  s.version          = '0.1.5'
+  s.version          = '0.1.6'
   s.summary          = '集成餐饮云收银台付款'
 
 # This description is used to generate tags and improve search results.
@@ -30,7 +30,7 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '10.0'
 
-  #s.source_files = 'CloudPay/Classes/**/*'
+  s.source_files = 'CloudPay/Classes/**/*'
   
   # s.resource_bundles = {
   #   'CloudPay' => ['CloudPay/Assets/*.png']
@@ -43,6 +43,6 @@ Pod::Spec.new do |s|
   s.dependency 'WebViewJavascriptBridge'
   
   s.static_framework = true #指定pod加静态库标签
-  s.vendored_frameworks = 'CloudPay.framework'
+  #s.vendored_frameworks = 'CloudPay.framework'
 
 end

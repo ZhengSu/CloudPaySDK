@@ -9,24 +9,12 @@
 /* Begin PBXAggregateTarget section */
 		8554F6236D2AA202CF58503D2DF29730 /* WechatOpenSDK */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = BF5577238B1BBC2E2CB759C1BDC65425 /* Build configuration list for PBXAggregateTarget "WechatOpenSDK" */;
+			buildConfigurationList = 17C3A6E49BF6B0F5C5DE3372D81EEA03 /* Build configuration list for PBXAggregateTarget "WechatOpenSDK" */;
 			buildPhases = (
 			);
 			dependencies = (
 			);
 			name = WechatOpenSDK;
-		};
-		8DC254EF0E13B1B31C1F32F5271BB044 /* CloudPay */ = {
-			isa = PBXAggregateTarget;
-			buildConfigurationList = 17607B71EF1DC9D68839F52049BE1550 /* Build configuration list for PBXAggregateTarget "CloudPay" */;
-			buildPhases = (
-			);
-			dependencies = (
-				158D7CB4467A222D4ED79386AC12F48C /* PBXTargetDependency */,
-				593B097BD152A9D27F02BDCA513078F0 /* PBXTargetDependency */,
-				14A382B8F1D3CBAFDF9AF5B15224E6AB /* PBXTargetDependency */,
-			);
-			name = CloudPay;
 		};
 		9988AFDA2A675F720078D78CAB206911 /* AliPay_SDK */ = {
 			isa = PBXAggregateTarget;
@@ -40,34 +28,53 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		0C4B450150B8F7B3E2D13FFB5F6C1CA2 /* WebViewJavascriptBridge_JS.m in Sources */ = {isa = PBXBuildFile; fileRef = EBCEF852F2BA33FE4D30AEFB31B1A9EC /* WebViewJavascriptBridge_JS.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		2083791632A631B6261AE26A0BCD2EC2 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C897531E0A2210C76C1F033A8A925F8 /* WebKit.framework */; };
-		4456722D8D44E12295A979BA7103FBEC /* WebViewJavascriptBridge-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 18BED69FA4CA0F0DC5B869AA25D19BE9 /* WebViewJavascriptBridge-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		06195C9BD2EA53634F46B1C340CE9D4A /* CloudPay-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E2E6B15F2B45FABF1548F3BC5A12E49 /* CloudPay-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		07ECD868C08974CF67682961D2878EF1 /* WebViewJavascriptBridge_JS.m in Sources */ = {isa = PBXBuildFile; fileRef = EBCEF852F2BA33FE4D30AEFB31B1A9EC /* WebViewJavascriptBridge_JS.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		10500A510E299954A1A1A9CC9084C792 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C897531E0A2210C76C1F033A8A925F8 /* WebKit.framework */; };
+		231DE4726D8A02D222F57976F7B37CE2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82A12C355E463B10B23D0A4B9F8CE0C0 /* Foundation.framework */; };
+		2CC5DC5E7D48A68D9521522E67772347 /* WKWebViewJavascriptBridge.h in Headers */ = {isa = PBXBuildFile; fileRef = 8604EC2E150BFFB863D2601F88481807 /* WKWebViewJavascriptBridge.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		300793E9D9F8BF6BC8D6D21F45428D6F /* CloudPay.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A61403362A92C7836601AB286A9A34D /* CloudPay.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		469213374CFFDEA3DFBB165278CED4CE /* Pods-CloudPay_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F2AA130C3CD9CAEB89E045C6723CB3F /* Pods-CloudPay_Tests-dummy.m */; };
+		4C6DAE8BF59226F4A082D200B6176A61 /* WebViewJavascriptBridge.h in Headers */ = {isa = PBXBuildFile; fileRef = A792D7E79C7AD3C389997DCFD63E22FB /* WebViewJavascriptBridge.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		507271C107C013C8F55C628E5F3D99BB /* Pods-CloudPay_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B8FC3108A59D7DF453F233D01C2266A4 /* Pods-CloudPay_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		52AFFBCB56023FAE93862CD519586755 /* WebViewJavascriptBridgeBase.h in Headers */ = {isa = PBXBuildFile; fileRef = 59BB583FF986FDAA376C4BAE6F293243 /* WebViewJavascriptBridgeBase.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6333B763E46801BB0DE2C2DE676A6F58 /* WebViewJavascriptBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E1DBC393D55309B9ADB62E3557B330F /* WebViewJavascriptBridge.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		7CDE8816CDDD17017A9B7B8198F3F706 /* WebViewJavascriptBridge_JS.h in Headers */ = {isa = PBXBuildFile; fileRef = F088C0EA33CB9BDC97F879D5FF4D4B9E /* WebViewJavascriptBridge_JS.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		86DDCDFB274BC27A90DE14872A1EBFD3 /* WebViewJavascriptBridge.h in Headers */ = {isa = PBXBuildFile; fileRef = A792D7E79C7AD3C389997DCFD63E22FB /* WebViewJavascriptBridge.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		57396F92E5764C507BF2247329B8192D /* WebViewJavascriptBridge-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 18BED69FA4CA0F0DC5B869AA25D19BE9 /* WebViewJavascriptBridge-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		70D97F0EAC8E6C758FF2413B2FCCDF20 /* WebViewJavascriptBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E1DBC393D55309B9ADB62E3557B330F /* WebViewJavascriptBridge.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		8D30CB4B2FDDD395773E53934B81A9C5 /* CloudPay-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B3F884A2C039E18F148A91B96539BC2B /* CloudPay-dummy.m */; };
 		92D77DF1C0DD327492A917BC89D0E86C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82A12C355E463B10B23D0A4B9F8CE0C0 /* Foundation.framework */; };
-		A4C159B125BF4B2F4E6ABD0D7D6FF3A7 /* WKWebViewJavascriptBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = CE67C698130102CD6D2A856CE43CD7CF /* WKWebViewJavascriptBridge.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		9EA27233543DA20EDAB161849747BB14 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A046A0C3DA644670DE800C6194B2764 /* UIKit.framework */; };
+		A055869616EDDDCD4217912EDEA23346 /* CloudPay.m in Sources */ = {isa = PBXBuildFile; fileRef = 66665572505AFED684AF738388A985F1 /* CloudPay.m */; };
 		A904B9DC7B10AA1FC9BEBB2385A7F2E4 /* Pods-CloudPay_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 48F289C95A3C3DB0CC1F4860B158A64A /* Pods-CloudPay_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AC43C3C7E68DFB0A3A02C71736370D8C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82A12C355E463B10B23D0A4B9F8CE0C0 /* Foundation.framework */; };
 		B0FFB51C1B2A6115365D5FD781138C1F /* Pods-CloudPay_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CFA1C7165DC574236F6410D5A6974546 /* Pods-CloudPay_Example-dummy.m */; };
-		C03F68A7F970F567D66677FE1886D182 /* WebViewJavascriptBridgeBase.m in Sources */ = {isa = PBXBuildFile; fileRef = F617E47709013E6B9E286A3636E22D15 /* WebViewJavascriptBridgeBase.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		DDFC8A4AE037B1D6A98BE1464020DF83 /* WKWebViewJavascriptBridge.h in Headers */ = {isa = PBXBuildFile; fileRef = 8604EC2E150BFFB863D2601F88481807 /* WKWebViewJavascriptBridge.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DF4363AC1452047DC32305606B192841 /* WebViewJavascriptBridge-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F7F4C8D6EEBCDFB1C7EA641638DB6DCE /* WebViewJavascriptBridge-dummy.m */; };
-		E0737A44CBAF7269F9D430C1524780BE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82A12C355E463B10B23D0A4B9F8CE0C0 /* Foundation.framework */; };
-		F504832D0623332372474523310172F9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A046A0C3DA644670DE800C6194B2764 /* UIKit.framework */; };
+		B913A5CA56FF298ECCFF12F7D61549C5 /* WebViewJavascriptBridge_JS.h in Headers */ = {isa = PBXBuildFile; fileRef = F088C0EA33CB9BDC97F879D5FF4D4B9E /* WebViewJavascriptBridge_JS.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		D1C94AAA10960647B80B2D36E4DDFA35 /* WebViewJavascriptBridgeBase.h in Headers */ = {isa = PBXBuildFile; fileRef = 59BB583FF986FDAA376C4BAE6F293243 /* WebViewJavascriptBridgeBase.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DF161628A3FAAC4A20E1723D69D30000 /* WKWebViewJavascriptBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = CE67C698130102CD6D2A856CE43CD7CF /* WKWebViewJavascriptBridge.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		E30180F41E6373A5195DB1B051513F97 /* WebViewJavascriptBridgeBase.m in Sources */ = {isa = PBXBuildFile; fileRef = F617E47709013E6B9E286A3636E22D15 /* WebViewJavascriptBridgeBase.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		FA13688A5887D7011993757656831BDD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82A12C355E463B10B23D0A4B9F8CE0C0 /* Foundation.framework */; };
+		FBC1D83A06D43EED555955C9A2E09CFF /* WebViewJavascriptBridge-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F7F4C8D6EEBCDFB1C7EA641638DB6DCE /* WebViewJavascriptBridge-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		53124B99DC2556BF415179623300971B /* PBXContainerItemProxy */ = {
+		278B0204D5F88335EC9C4384E06487B6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 83FFAF8D82986F21DE085231B555D756;
-			remoteInfo = "Pods-CloudPay_Example";
+			remoteGlobalIDString = 9988AFDA2A675F720078D78CAB206911;
+			remoteInfo = AliPay_SDK;
+		};
+		2FEA7DE573213EA7B1C608686623688A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8554F6236D2AA202CF58503D2DF29730;
+			remoteInfo = WechatOpenSDK;
+		};
+		50DC9113CAB48E7BC9D911C7116C4E9B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D6EE36F386DBFD58A8A5B22D65791ABB;
+			remoteInfo = WebViewJavascriptBridge;
 		};
 		5F1BB5079C7AF6123869F02DAE0961C7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -76,26 +83,26 @@
 			remoteGlobalIDString = 9988AFDA2A675F720078D78CAB206911;
 			remoteInfo = AliPay_SDK;
 		};
-		6B51CA5E5C55CB0F7E669B6646D57876 /* PBXContainerItemProxy */ = {
+		6DF5723691B0EE03A1C5A8F31C826F4B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = D6EE36F386DBFD58A8A5B22D65791ABB;
 			remoteInfo = WebViewJavascriptBridge;
 		};
-		7F80518E9C3231D763E5FF6F383C4B6A /* PBXContainerItemProxy */ = {
+		AC64C385DBB9DFEBCBEA401BE3766831 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 83FFAF8D82986F21DE085231B555D756;
+			remoteInfo = "Pods-CloudPay_Example";
+		};
+		B7B79DEE04DE0CB979DA5040AF4EF574 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 8554F6236D2AA202CF58503D2DF29730;
 			remoteInfo = WechatOpenSDK;
-		};
-		9ECC6F1684FF3E8DC0F87C0E0130443E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 9988AFDA2A675F720078D78CAB206911;
-			remoteInfo = AliPay_SDK;
 		};
 		F1CECDD544083FF6546864F3E885EDA3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -104,92 +111,75 @@
 			remoteGlobalIDString = 8DC254EF0E13B1B31C1F32F5271BB044;
 			remoteInfo = CloudPay;
 		};
-		F5ADBEC2FBDB8AE1D28E74A410613B16 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D6EE36F386DBFD58A8A5B22D65791ABB;
-			remoteInfo = WebViewJavascriptBridge;
-		};
-		FD18CF00FF0856B480C2877296694E8B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 8554F6236D2AA202CF58503D2DF29730;
-			remoteInfo = WechatOpenSDK;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		051D26165384B075BC1BA05D15E8C2D0 /* AliPay_SDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AliPay_SDK.release.xcconfig; sourceTree = "<group>"; };
 		0EDD9B6BDE3C051947969FB37C5C7288 /* WebViewJavascriptBridge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WebViewJavascriptBridge.release.xcconfig; sourceTree = "<group>"; };
 		11B7B7A798F9AB9B6F0F3E35B6960706 /* WebViewJavascriptBridge-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WebViewJavascriptBridge-prefix.pch"; sourceTree = "<group>"; };
+		11D462079883B66405B6E7338AB29D1D /* CloudPay.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CloudPay.debug.xcconfig; sourceTree = "<group>"; };
 		120FE8B3475932188AE2CB17F1942C77 /* Pods-CloudPay_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CloudPay_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		13CFD896F0FCC2F8F02E874751AA97D2 /* Pods-CloudPay_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CloudPay_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		18BED69FA4CA0F0DC5B869AA25D19BE9 /* WebViewJavascriptBridge-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WebViewJavascriptBridge-umbrella.h"; sourceTree = "<group>"; };
 		199D51631AB1F212352D3D1CBBE8F2BE /* WXApi.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WXApi.h; path = OpenSDK1.9.7/WXApi.h; sourceTree = "<group>"; };
 		1E1DBC393D55309B9ADB62E3557B330F /* WebViewJavascriptBridge.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WebViewJavascriptBridge.m; path = WebViewJavascriptBridge/WebViewJavascriptBridge.m; sourceTree = "<group>"; };
 		210AC4FFAD6E5B8F9FCDB11B70CDD821 /* Pods-CloudPay_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CloudPay_Example-Info.plist"; sourceTree = "<group>"; };
-		294305020622014258E980E00C132576 /* CloudPay.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CloudPay.framework; sourceTree = "<group>"; };
 		2FD6C03658A2254E1C19CC8DFAC37385 /* AliPay_SDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AliPay_SDK.debug.xcconfig; sourceTree = "<group>"; };
 		37743354896511C8A61316810144F8FD /* Pods-CloudPay_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-CloudPay_Tests"; path = Pods_CloudPay_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A61403362A92C7836601AB286A9A34D /* CloudPay.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CloudPay.h; path = CloudPay/Classes/CloudPay.h; sourceTree = "<group>"; };
 		3C897531E0A2210C76C1F033A8A925F8 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/WebKit.framework; sourceTree = DEVELOPER_DIR; };
 		3E09F5AD2EAD2F167F3E4B1342396300 /* Pods-CloudPay_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CloudPay_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		47D9F63440820613DE1263E9A799A4EC /* libWechatOpenSDK.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libWechatOpenSDK.a; path = OpenSDK1.9.7/libWechatOpenSDK.a; sourceTree = "<group>"; };
 		48933ADAA58D3618434DD2847D1DD5C8 /* WechatOpenSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WechatOpenSDK.debug.xcconfig; sourceTree = "<group>"; };
 		48F289C95A3C3DB0CC1F4860B158A64A /* Pods-CloudPay_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CloudPay_Tests-umbrella.h"; sourceTree = "<group>"; };
 		4A046A0C3DA644670DE800C6194B2764 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		59309B0633F473495044592E0A762BD9 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		59BB583FF986FDAA376C4BAE6F293243 /* WebViewJavascriptBridgeBase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WebViewJavascriptBridgeBase.h; path = WebViewJavascriptBridge/WebViewJavascriptBridgeBase.h; sourceTree = "<group>"; };
-		60BE71686095A72E144D3211B53479A1 /* CloudPay.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CloudPay.release.xcconfig; sourceTree = "<group>"; };
 		6290C08746790CFDC96B2254DE88AB81 /* WebViewJavascriptBridge.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = WebViewJavascriptBridge.modulemap; sourceTree = "<group>"; };
+		66665572505AFED684AF738388A985F1 /* CloudPay.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CloudPay.m; path = CloudPay/Classes/CloudPay.m; sourceTree = "<group>"; };
+		6E2E6B15F2B45FABF1548F3BC5A12E49 /* CloudPay-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CloudPay-umbrella.h"; sourceTree = "<group>"; };
 		797B01B7AC79DAB57ECAD65B43053292 /* WebViewJavascriptBridge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WebViewJavascriptBridge.debug.xcconfig; sourceTree = "<group>"; };
 		7F2AA130C3CD9CAEB89E045C6723CB3F /* Pods-CloudPay_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CloudPay_Tests-dummy.m"; sourceTree = "<group>"; };
 		815B60EB506818070BA13A02663AD5D4 /* Pods-CloudPay_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CloudPay_Example.release.xcconfig"; sourceTree = "<group>"; };
 		82A12C355E463B10B23D0A4B9F8CE0C0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		82E29BD09FD9E51D20B39B92EBC82299 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		83CB50F54403273F8E6F7327B55A3FD5 /* Pods-CloudPay_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CloudPay_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		8604EC2E150BFFB863D2601F88481807 /* WKWebViewJavascriptBridge.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WKWebViewJavascriptBridge.h; path = WebViewJavascriptBridge/WKWebViewJavascriptBridge.h; sourceTree = "<group>"; };
 		860B9F3E72B5C543B3853EB3E756DC63 /* AlipaySDK.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = AlipaySDK.bundle; path = "AliPay-master/AlipaySDK.bundle"; sourceTree = "<group>"; };
 		8E60795E3DB6A97C911DE141A4C549E5 /* Pods-CloudPay_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-CloudPay_Example"; path = Pods_CloudPay_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EB68B7943515E4F13CC6BE690FFD564 /* WebViewJavascriptBridge */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = WebViewJavascriptBridge; path = WebViewJavascriptBridge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A5704FB8332D8EBE0E974AE1F1A34FFA /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		A59BE4BE9458B9BDB34267817CD690B9 /* Pods-CloudPay_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CloudPay_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		A792D7E79C7AD3C389997DCFD63E22FB /* WebViewJavascriptBridge.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WebViewJavascriptBridge.h; path = WebViewJavascriptBridge/WebViewJavascriptBridge.h; sourceTree = "<group>"; };
-		A86EBA23E7D59F4E9B5279D15B8AE62B /* CloudPay.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CloudPay.debug.xcconfig; sourceTree = "<group>"; };
 		AC9D42CDD1AC18254590879A9910788A /* Pods-CloudPay_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CloudPay_Example-resources.sh"; sourceTree = "<group>"; };
+		B3F884A2C039E18F148A91B96539BC2B /* CloudPay-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CloudPay-dummy.m"; sourceTree = "<group>"; };
 		B52E4A098461ADDC617B553C8F40C9B7 /* Pods-CloudPay_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CloudPay_Tests-Info.plist"; sourceTree = "<group>"; };
 		B8FC3108A59D7DF453F233D01C2266A4 /* Pods-CloudPay_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CloudPay_Example-umbrella.h"; sourceTree = "<group>"; };
 		B9FA91AA9457E5A4890054E5DA0449B7 /* WechatOpenSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WechatOpenSDK.release.xcconfig; sourceTree = "<group>"; };
 		BD912FA54D919DDD1F7A749AFF9CA0C7 /* Pods-CloudPay_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CloudPay_Example-frameworks.sh"; sourceTree = "<group>"; };
+		BE0C1118332C0E69E13F328A1964EB49 /* CloudPay.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CloudPay.modulemap; sourceTree = "<group>"; };
+		C4124D1D40FADA6583F7CEB728378A09 /* CloudPay.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CloudPay.release.xcconfig; sourceTree = "<group>"; };
 		C656E42F7EBC453BDFB7530A7AB174D5 /* WXApiObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WXApiObject.h; path = OpenSDK1.9.7/WXApiObject.h; sourceTree = "<group>"; };
 		C6AAEF04AB8C0DC019DE958AFB92DF50 /* Pods-CloudPay_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CloudPay_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		CE67C698130102CD6D2A856CE43CD7CF /* WKWebViewJavascriptBridge.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WKWebViewJavascriptBridge.m; path = WebViewJavascriptBridge/WKWebViewJavascriptBridge.m; sourceTree = "<group>"; };
+		CE72E24362F0BDB2C0A41F2F5FB59310 /* CloudPay.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = CloudPay.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		CEA8F4FF50DDBCF53AC3429FEBCEFCFF /* AlipaySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlipaySDK.framework; path = "AliPay-master/AlipaySDK.framework"; sourceTree = "<group>"; };
 		CFA1C7165DC574236F6410D5A6974546 /* Pods-CloudPay_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CloudPay_Example-dummy.m"; sourceTree = "<group>"; };
+		DBE90B96FC50AE64615ABBB090C5B5A9 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		DE81D37C3FDC72934E8B1F69A3D79B25 /* Pods-CloudPay_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-CloudPay_Tests.modulemap"; sourceTree = "<group>"; };
 		DEACBEB29F60D7B283B5B053708CFA05 /* Pods-CloudPay_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CloudPay_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		E43FB4D4E4754C998FEA5423B849228C /* WebViewJavascriptBridge-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "WebViewJavascriptBridge-Info.plist"; sourceTree = "<group>"; };
+		E4B9D59D38D73B595F0AEC91BF0B5E88 /* CloudPay-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CloudPay-prefix.pch"; sourceTree = "<group>"; };
 		EBCEF852F2BA33FE4D30AEFB31B1A9EC /* WebViewJavascriptBridge_JS.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WebViewJavascriptBridge_JS.m; path = WebViewJavascriptBridge/WebViewJavascriptBridge_JS.m; sourceTree = "<group>"; };
+		EE64170F44825E4049CF7B2497732996 /* CloudPay */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CloudPay; path = CloudPay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFA3A82DDFFDFD18BCB3D3E6E5E1A36B /* WechatAuthSDK.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WechatAuthSDK.h; path = OpenSDK1.9.7/WechatAuthSDK.h; sourceTree = "<group>"; };
 		F088C0EA33CB9BDC97F879D5FF4D4B9E /* WebViewJavascriptBridge_JS.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WebViewJavascriptBridge_JS.h; path = WebViewJavascriptBridge/WebViewJavascriptBridge_JS.h; sourceTree = "<group>"; };
-		F4C98B5F1FD9CE9D8391361E874DE943 /* CloudPay.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = CloudPay.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		F3BAB21F98C4F65BE73F05526CD1475E /* CloudPay-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "CloudPay-Info.plist"; sourceTree = "<group>"; };
 		F617E47709013E6B9E286A3636E22D15 /* WebViewJavascriptBridgeBase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WebViewJavascriptBridgeBase.m; path = WebViewJavascriptBridge/WebViewJavascriptBridgeBase.m; sourceTree = "<group>"; };
 		F66F78ADA4F69E8E9739B2FF989B9778 /* Pods-CloudPay_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-CloudPay_Example.modulemap"; sourceTree = "<group>"; };
 		F7F4C8D6EEBCDFB1C7EA641638DB6DCE /* WebViewJavascriptBridge-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "WebViewJavascriptBridge-dummy.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		062DB19351B3FE7BEAD3B7C2ED8DAC3B /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E0737A44CBAF7269F9D430C1524780BE /* Foundation.framework in Frameworks */,
-				F504832D0623332372474523310172F9 /* UIKit.framework in Frameworks */,
-				2083791632A631B6261AE26A0BCD2EC2 /* WebKit.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		10D07FD084149ADD37F26F7A20CA7AFE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -206,6 +196,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		47455C9C0577ECAC3A71B9D74A05D3C1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				231DE4726D8A02D222F57976F7B37CE2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF71BF7232CED3483FD6247BD234FBBE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC43C3C7E68DFB0A3A02C71736370D8C /* Foundation.framework in Frameworks */,
+				9EA27233543DA20EDAB161849747BB14 /* UIKit.framework in Frameworks */,
+				10500A510E299954A1A1A9CC9084C792 /* WebKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -217,24 +225,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		3B1FE67E36F9DE6EF054F615BEB69DE2 /* Support Files */ = {
+		2A45C14CA95833AA74745387A89D2C60 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				A86EBA23E7D59F4E9B5279D15B8AE62B /* CloudPay.debug.xcconfig */,
-				60BE71686095A72E144D3211B53479A1 /* CloudPay.release.xcconfig */,
+				CE72E24362F0BDB2C0A41F2F5FB59310 /* CloudPay.podspec */,
+				82E29BD09FD9E51D20B39B92EBC82299 /* LICENSE */,
+				DBE90B96FC50AE64615ABBB090C5B5A9 /* README.md */,
 			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/CloudPay";
-			sourceTree = "<group>";
-		};
-		3EDAAE1404E395F0A10FEC78D1626952 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				8E60795E3DB6A97C911DE141A4C549E5 /* Pods-CloudPay_Example */,
-				37743354896511C8A61316810144F8FD /* Pods-CloudPay_Tests */,
-				8EB68B7943515E4F13CC6BE690FFD564 /* WebViewJavascriptBridge */,
-			);
-			name = Products;
+			name = Pod;
 			sourceTree = "<group>";
 		};
 		3EF683608393BA4A8A77453E775C6D55 /* AliPay_SDK */ = {
@@ -298,6 +296,21 @@
 			path = "Target Support Files/Pods-CloudPay_Tests";
 			sourceTree = "<group>";
 		};
+		7AAE388609B184BD70FAF7D91BF68ED9 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				BE0C1118332C0E69E13F328A1964EB49 /* CloudPay.modulemap */,
+				B3F884A2C039E18F148A91B96539BC2B /* CloudPay-dummy.m */,
+				F3BAB21F98C4F65BE73F05526CD1475E /* CloudPay-Info.plist */,
+				E4B9D59D38D73B595F0AEC91BF0B5E88 /* CloudPay-prefix.pch */,
+				6E2E6B15F2B45FABF1548F3BC5A12E49 /* CloudPay-umbrella.h */,
+				11D462079883B66405B6E7338AB29D1D /* CloudPay.debug.xcconfig */,
+				C4124D1D40FADA6583F7CEB728378A09 /* CloudPay.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/CloudPay";
+			sourceTree = "<group>";
+		};
 		84A3DCF0AFC9EE7D8FFEC4FBEFB73523 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -329,12 +342,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		8A4DFEF0E07F76E9E3C65829439B5371 /* Frameworks */ = {
+		9013978CC5430539CA41AF05A825C524 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				294305020622014258E980E00C132576 /* CloudPay.framework */,
+				EE64170F44825E4049CF7B2497732996 /* CloudPay */,
+				8E60795E3DB6A97C911DE141A4C549E5 /* Pods-CloudPay_Example */,
+				37743354896511C8A61316810144F8FD /* Pods-CloudPay_Tests */,
+				8EB68B7943515E4F13CC6BE690FFD564 /* WebViewJavascriptBridge */,
 			);
-			name = Frameworks;
+			name = Products;
 			sourceTree = "<group>";
 		};
 		9A3C97815D881DD0DBF3BCB89B5370FD /* Support Files */ = {
@@ -371,6 +387,26 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		C5C3D1F2D7BA15638950A577279E25D9 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CA42AA8423212B09242E0232DFB4A3C6 /* CloudPay */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		CA42AA8423212B09242E0232DFB4A3C6 /* CloudPay */ = {
+			isa = PBXGroup;
+			children = (
+				3A61403362A92C7836601AB286A9A34D /* CloudPay.h */,
+				66665572505AFED684AF738388A985F1 /* CloudPay.m */,
+				2A45C14CA95833AA74745387A89D2C60 /* Pod */,
+				7AAE388609B184BD70FAF7D91BF68ED9 /* Support Files */,
+			);
+			name = CloudPay;
+			path = ../..;
+			sourceTree = "<group>";
+		};
 		CBEFA2BEB1BEA3AEB543A51607322A05 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -385,31 +421,12 @@
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				D10AB94C2C689CAD17FBEE7C8EBC2867 /* Development Pods */,
+				C5C3D1F2D7BA15638950A577279E25D9 /* Development Pods */,
 				03C5C200A0787E300053CFA8F53CA094 /* Frameworks */,
 				BB8E3AB3486758A5592C7C649A8C6E48 /* Pods */,
-				3EDAAE1404E395F0A10FEC78D1626952 /* Products */,
+				9013978CC5430539CA41AF05A825C524 /* Products */,
 				A76ACD3C3729C2F0A34F7D85CC47068E /* Targets Support Files */,
 			);
-			sourceTree = "<group>";
-		};
-		D10AB94C2C689CAD17FBEE7C8EBC2867 /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				DA336F8BA506285BDA0633B4904BF5AB /* CloudPay */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		DA336F8BA506285BDA0633B4904BF5AB /* CloudPay */ = {
-			isa = PBXGroup;
-			children = (
-				8A4DFEF0E07F76E9E3C65829439B5371 /* Frameworks */,
-				EEA1ED61FC20F722C81D465487C187AF /* Pod */,
-				3B1FE67E36F9DE6EF054F615BEB69DE2 /* Support Files */,
-			);
-			name = CloudPay;
-			path = ../..;
 			sourceTree = "<group>";
 		};
 		EA88C328D0C955EA911CC4E5AC3CC2E8 /* WebViewJavascriptBridge */ = {
@@ -429,16 +446,6 @@
 			path = WebViewJavascriptBridge;
 			sourceTree = "<group>";
 		};
-		EEA1ED61FC20F722C81D465487C187AF /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				F4C98B5F1FD9CE9D8391361E874DE943 /* CloudPay.podspec */,
-				A5704FB8332D8EBE0E974AE1F1A34FFA /* LICENSE */,
-				59309B0633F473495044592E0A762BD9 /* README.md */,
-			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
 		F85289A6FA0621F64271354F5A3AAC1E /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -452,6 +459,18 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		374FC6871EEFDBFB554545A95412EB7C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C6DAE8BF59226F4A082D200B6176A61 /* WebViewJavascriptBridge.h in Headers */,
+				57396F92E5764C507BF2247329B8192D /* WebViewJavascriptBridge-umbrella.h in Headers */,
+				B913A5CA56FF298ECCFF12F7D61549C5 /* WebViewJavascriptBridge_JS.h in Headers */,
+				D1C94AAA10960647B80B2D36E4DDFA35 /* WebViewJavascriptBridgeBase.h in Headers */,
+				2CC5DC5E7D48A68D9521522E67772347 /* WKWebViewJavascriptBridge.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		83EF70A3778410EC384DF1A05E903901 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -468,15 +487,12 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B31C2A3C9961451A7B1AD66478862BE8 /* Headers */ = {
+		C6CABB866DD46A87DFFED1AD0CA28EAE /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				86DDCDFB274BC27A90DE14872A1EBFD3 /* WebViewJavascriptBridge.h in Headers */,
-				4456722D8D44E12295A979BA7103FBEC /* WebViewJavascriptBridge-umbrella.h in Headers */,
-				7CDE8816CDDD17017A9B7B8198F3F706 /* WebViewJavascriptBridge_JS.h in Headers */,
-				52AFFBCB56023FAE93862CD519586755 /* WebViewJavascriptBridgeBase.h in Headers */,
-				DDFC8A4AE037B1D6A98BE1464020DF83 /* WKWebViewJavascriptBridge.h in Headers */,
+				300793E9D9F8BF6BC8D6D21F45428D6F /* CloudPay.h in Headers */,
+				06195C9BD2EA53634F46B1C340CE9D4A /* CloudPay-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -497,12 +513,33 @@
 			dependencies = (
 				BC69D241EF2A31E6614CB909A62FFCA0 /* PBXTargetDependency */,
 				C353ECB6E76C2266B41F945746B6AE1F /* PBXTargetDependency */,
-				E4128C24AE9920759DD5C644E0F7794F /* PBXTargetDependency */,
-				9D78D7B52FC2926CAB2785CD9354EAD6 /* PBXTargetDependency */,
+				DC716A2776C42393D879B039C5DDAFDD /* PBXTargetDependency */,
+				A2D9D59554ED0A014D6E88F586586BEE /* PBXTargetDependency */,
 			);
 			name = "Pods-CloudPay_Example";
 			productName = Pods_CloudPay_Example;
 			productReference = 8E60795E3DB6A97C911DE141A4C549E5 /* Pods-CloudPay_Example */;
+			productType = "com.apple.product-type.framework";
+		};
+		8DC254EF0E13B1B31C1F32F5271BB044 /* CloudPay */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E159CA16E880FFBC0D2B633CFA49072A /* Build configuration list for PBXNativeTarget "CloudPay" */;
+			buildPhases = (
+				C6CABB866DD46A87DFFED1AD0CA28EAE /* Headers */,
+				AF2D878676211ED452E8893283DF84FE /* Sources */,
+				47455C9C0577ECAC3A71B9D74A05D3C1 /* Frameworks */,
+				228C459DE06C81800799FD9E25CA673E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0A4DF7201DE36CA7413F2B14BD40682F /* PBXTargetDependency */,
+				12C91E7E0D13E93EF4487D0BC76DCC44 /* PBXTargetDependency */,
+				D0B01D18CC5BDA0281C202BC7016FB91 /* PBXTargetDependency */,
+			);
+			name = CloudPay;
+			productName = CloudPay;
+			productReference = EE64170F44825E4049CF7B2497732996 /* CloudPay */;
 			productType = "com.apple.product-type.framework";
 		};
 		C72E67210D9BF87AA880238E9E71BCB7 /* Pods-CloudPay_Tests */ = {
@@ -517,7 +554,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				ED65B2DF08FFAFB3C12C2D37B20C2CE8 /* PBXTargetDependency */,
+				F96CFAEB7358361034BBEE40804CDE78 /* PBXTargetDependency */,
 			);
 			name = "Pods-CloudPay_Tests";
 			productName = Pods_CloudPay_Tests;
@@ -526,12 +563,12 @@
 		};
 		D6EE36F386DBFD58A8A5B22D65791ABB /* WebViewJavascriptBridge */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2DEE138CEB04739317EBDABE74E43E22 /* Build configuration list for PBXNativeTarget "WebViewJavascriptBridge" */;
+			buildConfigurationList = 18E668CC07F49D24311CF9073A02A66B /* Build configuration list for PBXNativeTarget "WebViewJavascriptBridge" */;
 			buildPhases = (
-				B31C2A3C9961451A7B1AD66478862BE8 /* Headers */,
-				680BADF32274EF191A10198AE32EC9FF /* Sources */,
-				062DB19351B3FE7BEAD3B7C2ED8DAC3B /* Frameworks */,
-				BBE13B20A19292E8F0AB8985DD6E0EEF /* Resources */,
+				374FC6871EEFDBFB554545A95412EB7C /* Headers */,
+				A285809B8C1CEE53E65C0F9BF189AA71 /* Sources */,
+				AF71BF7232CED3483FD6247BD234FBBE /* Frameworks */,
+				E156BDC4551A3EE68E58788A10E0719D /* Resources */,
 			);
 			buildRules = (
 			);
@@ -560,7 +597,7 @@
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 3EDAAE1404E395F0A10FEC78D1626952 /* Products */;
+			productRefGroup = 9013978CC5430539CA41AF05A825C524 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -575,6 +612,13 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		228C459DE06C81800799FD9E25CA673E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		47F3FF49E5D23C64B803CD655069D664 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -589,7 +633,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BBE13B20A19292E8F0AB8985DD6E0EEF /* Resources */ = {
+		E156BDC4551A3EE68E58788A10E0719D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -607,18 +651,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		680BADF32274EF191A10198AE32EC9FF /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6333B763E46801BB0DE2C2DE676A6F58 /* WebViewJavascriptBridge.m in Sources */,
-				DF4363AC1452047DC32305606B192841 /* WebViewJavascriptBridge-dummy.m in Sources */,
-				0C4B450150B8F7B3E2D13FFB5F6C1CA2 /* WebViewJavascriptBridge_JS.m in Sources */,
-				C03F68A7F970F567D66677FE1886D182 /* WebViewJavascriptBridgeBase.m in Sources */,
-				A4C159B125BF4B2F4E6ABD0D7D6FF3A7 /* WKWebViewJavascriptBridge.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		909453E8F98F3E0EBDF9D3240548B43C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -627,32 +659,47 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A285809B8C1CEE53E65C0F9BF189AA71 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70D97F0EAC8E6C758FF2413B2FCCDF20 /* WebViewJavascriptBridge.m in Sources */,
+				FBC1D83A06D43EED555955C9A2E09CFF /* WebViewJavascriptBridge-dummy.m in Sources */,
+				07ECD868C08974CF67682961D2878EF1 /* WebViewJavascriptBridge_JS.m in Sources */,
+				E30180F41E6373A5195DB1B051513F97 /* WebViewJavascriptBridgeBase.m in Sources */,
+				DF161628A3FAAC4A20E1723D69D30000 /* WKWebViewJavascriptBridge.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF2D878676211ED452E8893283DF84FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A055869616EDDDCD4217912EDEA23346 /* CloudPay.m in Sources */,
+				8D30CB4B2FDDD395773E53934B81A9C5 /* CloudPay-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		14A382B8F1D3CBAFDF9AF5B15224E6AB /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = WechatOpenSDK;
-			target = 8554F6236D2AA202CF58503D2DF29730 /* WechatOpenSDK */;
-			targetProxy = FD18CF00FF0856B480C2877296694E8B /* PBXContainerItemProxy */;
-		};
-		158D7CB4467A222D4ED79386AC12F48C /* PBXTargetDependency */ = {
+		0A4DF7201DE36CA7413F2B14BD40682F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = AliPay_SDK;
 			target = 9988AFDA2A675F720078D78CAB206911 /* AliPay_SDK */;
-			targetProxy = 9ECC6F1684FF3E8DC0F87C0E0130443E /* PBXContainerItemProxy */;
+			targetProxy = 278B0204D5F88335EC9C4384E06487B6 /* PBXContainerItemProxy */;
 		};
-		593B097BD152A9D27F02BDCA513078F0 /* PBXTargetDependency */ = {
+		12C91E7E0D13E93EF4487D0BC76DCC44 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = WebViewJavascriptBridge;
 			target = D6EE36F386DBFD58A8A5B22D65791ABB /* WebViewJavascriptBridge */;
-			targetProxy = F5ADBEC2FBDB8AE1D28E74A410613B16 /* PBXContainerItemProxy */;
+			targetProxy = 6DF5723691B0EE03A1C5A8F31C826F4B /* PBXContainerItemProxy */;
 		};
-		9D78D7B52FC2926CAB2785CD9354EAD6 /* PBXTargetDependency */ = {
+		A2D9D59554ED0A014D6E88F586586BEE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = WechatOpenSDK;
 			target = 8554F6236D2AA202CF58503D2DF29730 /* WechatOpenSDK */;
-			targetProxy = 7F80518E9C3231D763E5FF6F383C4B6A /* PBXContainerItemProxy */;
+			targetProxy = B7B79DEE04DE0CB979DA5040AF4EF574 /* PBXContainerItemProxy */;
 		};
 		BC69D241EF2A31E6614CB909A62FFCA0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -666,21 +713,73 @@
 			target = 8DC254EF0E13B1B31C1F32F5271BB044 /* CloudPay */;
 			targetProxy = F1CECDD544083FF6546864F3E885EDA3 /* PBXContainerItemProxy */;
 		};
-		E4128C24AE9920759DD5C644E0F7794F /* PBXTargetDependency */ = {
+		D0B01D18CC5BDA0281C202BC7016FB91 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = WechatOpenSDK;
+			target = 8554F6236D2AA202CF58503D2DF29730 /* WechatOpenSDK */;
+			targetProxy = 2FEA7DE573213EA7B1C608686623688A /* PBXContainerItemProxy */;
+		};
+		DC716A2776C42393D879B039C5DDAFDD /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = WebViewJavascriptBridge;
 			target = D6EE36F386DBFD58A8A5B22D65791ABB /* WebViewJavascriptBridge */;
-			targetProxy = 6B51CA5E5C55CB0F7E669B6646D57876 /* PBXContainerItemProxy */;
+			targetProxy = 50DC9113CAB48E7BC9D911C7116C4E9B /* PBXContainerItemProxy */;
 		};
-		ED65B2DF08FFAFB3C12C2D37B20C2CE8 /* PBXTargetDependency */ = {
+		F96CFAEB7358361034BBEE40804CDE78 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-CloudPay_Example";
 			target = 83FFAF8D82986F21DE085231B555D756 /* Pods-CloudPay_Example */;
-			targetProxy = 53124B99DC2556BF415179623300971B /* PBXContainerItemProxy */;
+			targetProxy = AC64C385DBB9DFEBCBEA401BE3766831 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		0C4BB8B8E32822A3A1BDEE962C654611 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B9FA91AA9457E5A4890054E5DA0449B7 /* WechatOpenSDK.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		156B4B8F758280A6EC945372427D0AE1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 797B01B7AC79DAB57ECAD65B43053292 /* WebViewJavascriptBridge.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/WebViewJavascriptBridge/WebViewJavascriptBridge-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/WebViewJavascriptBridge/WebViewJavascriptBridge-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/WebViewJavascriptBridge/WebViewJavascriptBridge.modulemap";
+				PRODUCT_MODULE_NAME = WebViewJavascriptBridge;
+				PRODUCT_NAME = WebViewJavascriptBridge;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		22FBD4CF5FA6ECA8C08C45BAB52F70DC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A59BE4BE9458B9BDB34267817CD690B9 /* Pods-CloudPay_Example.debug.xcconfig */;
@@ -781,20 +880,6 @@
 			};
 			name = Debug;
 		};
-		31BCD43BCACBB231DA87D0B833E8118D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 48933ADAA58D3618434DD2847D1DD5C8 /* WechatOpenSDK.debug.xcconfig */;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
 		33582F56EFB47D6159AFAB6DEAAE7D59 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2FD6C03658A2254E1C19CC8DFAC37385 /* AliPay_SDK.debug.xcconfig */;
@@ -844,6 +929,39 @@
 			};
 			name = Release;
 		};
+		4FEE7CD491B55A5A9D989BDAAB902AB0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 11D462079883B66405B6E7338AB29D1D /* CloudPay.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CloudPay/CloudPay-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CloudPay/CloudPay-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/CloudPay/CloudPay.modulemap";
+				PRODUCT_MODULE_NAME = CloudPay;
+				PRODUCT_NAME = CloudPay;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		51F5297F45B90DAF5F47DC4949F47AEF /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 051D26165384B075BC1BA05D15E8C2D0 /* AliPay_SDK.release.xcconfig */;
@@ -852,22 +970,6 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		57ECEC9A3A0AA3821294407280D0DDE9 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 60BE71686095A72E144D3211B53479A1 /* CloudPay.release.xcconfig */;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -937,26 +1039,12 @@
 			};
 			name = Release;
 		};
-		6494F881F74767FC70A718A91D791010 /* Debug */ = {
+		7C8DA18EE8C5D478745F34B06068123A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A86EBA23E7D59F4E9B5279D15B8AE62B /* CloudPay.debug.xcconfig */;
+			baseConfigurationReference = C4124D1D40FADA6583F7CEB728378A09 /* CloudPay.release.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_OBJC_WEAK = NO;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		80F0A8789088BD4A1BA5E69EF042A923 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 797B01B7AC79DAB57ECAD65B43053292 /* WebViewJavascriptBridge.debug.xcconfig */;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -965,36 +1053,23 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/WebViewJavascriptBridge/WebViewJavascriptBridge-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/WebViewJavascriptBridge/WebViewJavascriptBridge-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/CloudPay/CloudPay-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CloudPay/CloudPay-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/WebViewJavascriptBridge/WebViewJavascriptBridge.modulemap";
-				PRODUCT_MODULE_NAME = WebViewJavascriptBridge;
-				PRODUCT_NAME = WebViewJavascriptBridge;
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/CloudPay/CloudPay.modulemap";
+				PRODUCT_MODULE_NAME = CloudPay;
+				PRODUCT_NAME = CloudPay;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		C6DB4950407EC4F63E888E81CC205EEF /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B9FA91AA9457E5A4890054E5DA0449B7 /* WechatOpenSDK.release.xcconfig */;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
@@ -1033,7 +1108,7 @@
 			};
 			name = Release;
 		};
-		C963EA3ABD5A415E225EB54606D37335 /* Release */ = {
+		D32579A2FF4C0FD9B3DE5C2086643620 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0EDD9B6BDE3C051947969FB37C5C7288 /* WebViewJavascriptBridge.release.xcconfig */;
 			buildSettings = {
@@ -1099,23 +1174,37 @@
 			};
 			name = Debug;
 		};
+		E2F44EFD2630ABE5355B54BAC34E8A5E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 48933ADAA58D3618434DD2847D1DD5C8 /* WechatOpenSDK.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		17607B71EF1DC9D68839F52049BE1550 /* Build configuration list for PBXAggregateTarget "CloudPay" */ = {
+		17C3A6E49BF6B0F5C5DE3372D81EEA03 /* Build configuration list for PBXAggregateTarget "WechatOpenSDK" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6494F881F74767FC70A718A91D791010 /* Debug */,
-				57ECEC9A3A0AA3821294407280D0DDE9 /* Release */,
+				E2F44EFD2630ABE5355B54BAC34E8A5E /* Debug */,
+				0C4BB8B8E32822A3A1BDEE962C654611 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2DEE138CEB04739317EBDABE74E43E22 /* Build configuration list for PBXNativeTarget "WebViewJavascriptBridge" */ = {
+		18E668CC07F49D24311CF9073A02A66B /* Build configuration list for PBXNativeTarget "WebViewJavascriptBridge" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				80F0A8789088BD4A1BA5E69EF042A923 /* Debug */,
-				C963EA3ABD5A415E225EB54606D37335 /* Release */,
+				156B4B8F758280A6EC945372427D0AE1 /* Debug */,
+				D32579A2FF4C0FD9B3DE5C2086643620 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1147,20 +1236,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BF5577238B1BBC2E2CB759C1BDC65425 /* Build configuration list for PBXAggregateTarget "WechatOpenSDK" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				31BCD43BCACBB231DA87D0B833E8118D /* Debug */,
-				C6DB4950407EC4F63E888E81CC205EEF /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		D6A2785AC9E8E2C3E8E87CABAC9A20AF /* Build configuration list for PBXAggregateTarget "AliPay_SDK" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				33582F56EFB47D6159AFAB6DEAAE7D59 /* Debug */,
 				51F5297F45B90DAF5F47DC4949F47AEF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E159CA16E880FFBC0D2B633CFA49072A /* Build configuration list for PBXNativeTarget "CloudPay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4FEE7CD491B55A5A9D989BDAAB902AB0 /* Debug */,
+				7C8DA18EE8C5D478745F34B06068123A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

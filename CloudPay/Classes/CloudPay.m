@@ -179,11 +179,9 @@ static CloudPay *manager = nil;
                 [[NSNotificationCenter defaultCenter] postNotificationName:CLOUDPAY_RESULT object:nil userInfo:param];
             }];
             return true;
-        }else if([url.host isEqualToString:@"catering.yonyou.com"]){
+        }else if([urlStr containsString:@"pay"]){
             return [WXApi handleOpenURL:url delegate:[CloudPay defaultManager]];
         }
-        
-//    }
     return false;
 }
 

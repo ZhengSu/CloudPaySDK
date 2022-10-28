@@ -1,6 +1,6 @@
 {
   "name": "CloudPay",
-  "version": "0.1.4",
+  "version": "0.1.6",
   "summary": "集成餐饮云收银台付款",
   "description": "移动端ios,接入收银台, 支持支付宝 微信等平台",
   "homepage": "https://github.com/ZhengSu/CloudPaySDK",
@@ -13,11 +13,12 @@
   },
   "source": {
     "git": "https://github.com/ZhengSu/CloudPaySDK.git",
-    "tag": "0.1.4"
+    "tag": "0.1.6"
   },
   "platforms": {
     "ios": "10.0"
   },
+  "source_files": "CloudPay/Classes/**/*",
   "dependencies": {
     "WechatOpenSDK": [
 
@@ -29,6 +30,5 @@
 
     ]
   },
-  "static_framework": true,
-  "vendored_frameworks": "CloudPay.framework"
+  "static_framework": true
 }

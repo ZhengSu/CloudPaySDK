@@ -37,7 +37,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    [[CloudPay defaultManager] registerApp:@"wx7d217bf812c8828f" universalLink:@"https://catering.yonyou.com/"];
+    [[CloudPay defaultManager] registerApp:@"wx7d217bf812c8828f" universalLink:@"https://catering.yonyou.com/" appScheme:@"CloudAliPay"];
     return YES;
 }
 

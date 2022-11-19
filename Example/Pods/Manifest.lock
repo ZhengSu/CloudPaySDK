@@ -1,7 +1,7 @@
 PODS:
-  - AliPay_SDK (15.6.5)
-  - CloudPay (0.2.0):
-    - AliPay_SDK
+  - AlipaySDK-iOS (15.8.11)
+  - CloudPay (0.2.1):
+    - AlipaySDK-iOS
     - WebViewJavascriptBridge
     - WechatOpenSDK
   - WebViewJavascriptBridge (6.0.3)
@@ -12,7 +12,7 @@ DEPENDENCIES:
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
-    - AliPay_SDK
+    - AlipaySDK-iOS
     - WebViewJavascriptBridge
     - WechatOpenSDK
 
@@ -21,8 +21,8 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  AliPay_SDK: 4f94ac544191588946581809b3ad34d1c3e30a83
-  CloudPay: 83ac052e16b9503e009d1c7a77270b17c8b1a1ed
+  AlipaySDK-iOS: a07b6eafa847a5b29acb6c150ea16d9792d5d167
+  CloudPay: fd38d3b494bba5ce46b2b82b057b82fd723700b4
   WebViewJavascriptBridge: 7f5bc4d3581e672e8f32bd0f812d54bc69bb8e29
   WechatOpenSDK: 2f0ae448c7525cb5c27db5f7aa0f568de0988fa4
 

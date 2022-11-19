@@ -9,9 +9,12 @@
 #import "YYWKWebVC.h"
 #import <WebKit/WebKit.h>
 #import <CloudPay/CloudPay.h>
+#import "WKWebViewJavascriptBridge.h"
 @interface YYWKWebVC ()
 @property (nonatomic, strong) WKWebView *  webView;
 @property (nonatomic, strong) NSString *payResulturl;
+
+@property (nonatomic, strong) WKWebViewJavascriptBridge *bridge;
 @end
 
 @implementation YYWKWebVC
@@ -19,8 +22,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self.view addSubview:self.webView];
-    
-    [[CloudPay defaultManager] cloudPayWithWebview:self.webView success:^(NSString * _Nonnull resultUrl) {
+
+    self.bridge = [WKWebViewJavascriptBridge bridgeForWebView:self.webView];
+
+    [[CloudPay defaultManager] cloudPayWithWebViewJavascriptBridge:self.bridge success:^(NSString * _Nonnull resultUrl) {
 
         self.payResulturl = resultUrl;
 
@@ -32,7 +37,6 @@
             //提示用户 【请先安装支付宝】
         }
     }];
-    
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(dealPayResult:) name:CLOUDPAY_RESULT object:nil];
 }
 - (void)dealPayResult:(NSNotification *)noti{
@@ -41,10 +45,10 @@
 
 - (WKWebView *)webView{
     if(_webView == nil){
-        
+
         //创建网页配置对象
         WKWebViewConfiguration *config = [[WKWebViewConfiguration alloc] init];
-        
+
         _webView = [[WKWebView alloc] initWithFrame:self.view.bounds configuration:config];
 
         NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:@"https://catering.uat.hhtdev.com/cloud-business-platform-mobile/#/mcashier/demo"]];

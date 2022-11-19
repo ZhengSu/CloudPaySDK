@@ -13,6 +13,7 @@
 @property (nonatomic, strong) WKWebViewJavascriptBridge *bridge;
 @property (nonatomic, strong) NSString *appid;
 @property (nonatomic, strong) NSString *universalLink;
+@property (nonatomic, strong) NSString *appScheme;
 
 @end
 @implementation CloudPay
@@ -45,37 +46,23 @@ static CloudPay *manager = nil;
     return manager;
 }
 
-- (BOOL)registerApp:(NSString *)appid universalLink:(NSString *)universalLink{
+- (BOOL)registerApp:(NSString *)appid universalLink:(NSString *)universalLink appScheme:(nonnull NSString *)appScheme{
     
     self.appid = appid;
     self.universalLink = universalLink;
+    self.appScheme = appScheme;
     
     return [WXApi registerApp:appid universalLink:universalLink];
 }
 
 #pragma mark 如果项目中使用了WKWebViewJavascriptBridge,则调用该方法
 /*! @brief 处理H5返回的订单信息，从而根据用户选择拉起【微信】或【支付宝】
- *
- * @param webView  WKWebView
  * @param success  返回支付结果的URL
  * @param failure  用来处理支付状态，比如用户【未安装微信】或【未安装支付宝】
  */
-- (void)cloudPayWithWebview:(WKWebView *)webView WebViewJavascriptBridge:(WKWebViewJavascriptBridge*)bridge  success:(void (^)(NSString *resultUrl))success failure:(void(^)(CloudPay_Status status))failure{
+- (void)cloudPayWithWebViewJavascriptBridge:(WKWebViewJavascriptBridge*)bridge  success:(void (^)(NSString *resultUrl))success failure:(void(^)(CloudPay_Status status))failure{
     
     self.bridge = bridge;
-    
-    [self cloudPayWithWebview:webView success:success failure:failure];
-}
-- (void)cloudPayWithWebview:(WKWebView *)webView success:(void (^)(NSString *resultUrl))success failure:(void(^)(CloudPay_Status status))failure{
-    
-    if(self.bridge == nil){
-        self.bridge = [WKWebViewJavascriptBridge bridgeForWebView:webView];
-    }
-    
-    
-    [self.bridge callHandler:@"registerAppid" data:@{@"appid":self.appid,@"universalLink":self.universalLink} responseCallback:^(id responseData) {
-        NSLog(@"注册成功");
-    }];
     
     [self.bridge registerHandler:@"getEnv" handler:^(id data, WVJBResponseCallback responseCallback) {
        if (responseCallback) {
@@ -89,9 +76,7 @@ static CloudPay *manager = nil;
              // 反馈给JS
            responseCallback(@{@"WXAppId":self.appid});
         }
-    }];
-
-    
+    }];    
     
     //注册原生事件 callTradePay 供 JavaScript 调用, data 是 JavaScript 传给原生的数据。responseCallback 是原生给 JavaScript 回传数据
     [self.bridge registerHandler:@"callTradePay" handler:^(NSDictionary *data, WVJBResponseCallback responseCallback) {
@@ -133,7 +118,7 @@ static CloudPay *manager = nil;
                 
                 
             }else if([paySource isEqualToString:@"alipay"]){
-                NSURL *alipayUrl = [NSURL URLWithString:@"CloudAliPay://"];
+                NSURL *alipayUrl = [NSURL URLWithString:[NSString stringWithFormat:@"%@://",self.appScheme]];
                 
                 if(![[UIApplication sharedApplication] canOpenURL:alipayUrl]){
                     if(failure){
@@ -142,7 +127,7 @@ static CloudPay *manager = nil;
                         return;
                     }                    
                 }
-                NSString *appScheme = @"CloudAliPay";
+                NSString *appScheme = self.appScheme;
                 if(payDataResponse == nil ){
                     if(failure){
                         //提示用户 【请先安装支付宝】
@@ -168,7 +153,7 @@ static CloudPay *manager = nil;
     
     
 //    if ([urlStr containsString:@"catering.uat.hhtdev.com"] && [urlStr containsString:@"pay"]){
-        if([url.host isEqualToString:@"safepay"] && [urlStr containsString:@"CloudAliPay"]){
+        if([url.host isEqualToString:@"safepay"]){
             //跳转支付宝客户端进行支付，处理支付结果
             [[AlipaySDK defaultService] processOrderWithPaymentResult:url standbyCallback:^(NSDictionary *resultDic) {
                 NSLog(@"result = %@",resultDic);

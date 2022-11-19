@@ -6,9 +6,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <WebKit/WebKit.h>
 #define CLOUDPAY_RESULT @"CLOUDPAY_RESULT"
-
 @class WKWebViewJavascriptBridge;
 typedef NS_ENUM(NSInteger, CloudPay_Status)
 {
@@ -30,30 +28,19 @@ NS_ASSUME_NONNULL_BEGIN
  * @attention 请保证在主线程中调用此函数
  * @param appid 微信开发者ID
  * @param universalLink 微信开发者Universal Link
+ * @param appScheme  appScheme,用于支付宝支付完成后返回当前APP
  * @return 成功返回YES，失败返回NO。
  */
-- (BOOL)registerApp:(NSString *)appid universalLink:(NSString *)universalLink;
+- (BOOL)registerApp:(NSString *)appid universalLink:(NSString *)universalLink appScheme:(NSString *)appScheme;
 
-
-
-#pragma mark 如果项目中 没有使用 WKWebViewJavascriptBridge,则调用该方法
-/*! @brief 处理H5返回的订单信息，从而根据用户选择拉起【微信】或【支付宝】
- *
- * @param webView  WKWebView
- * @param success  返回支付结果的URL
- * @param failure  用来处理支付状态，比如用户【未安装微信】或【未安装支付宝】
- */
-- (void)cloudPayWithWebview:(WKWebView *)webView success:(void (^)(NSString *resultUrl))success failure:(void(^)(CloudPay_Status status))failure;
 
 
 #pragma mark 如果项目中使用了WKWebViewJavascriptBridge,则调用该方法
 /*! @brief 处理H5返回的订单信息，从而根据用户选择拉起【微信】或【支付宝】
- *
- * @param webView  WKWebView
  * @param success  返回支付结果的URL
  * @param failure  用来处理支付状态，比如用户【未安装微信】或【未安装支付宝】
  */
-- (void)cloudPayWithWebview:(WKWebView *)webView WebViewJavascriptBridge:(WKWebViewJavascriptBridge*)bridge  success:(void (^)(NSString *resultUrl))success failure:(void(^)(CloudPay_Status status))failure;
+- (void)cloudPayWithWebViewJavascriptBridge:(WKWebViewJavascriptBridge*)bridge  success:(void (^)(NSString *resultUrl))success failure:(void(^)(CloudPay_Status status))failure;
 
 
 

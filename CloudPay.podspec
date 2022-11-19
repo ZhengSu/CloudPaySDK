@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'CloudPay'
-  s.version          = '0.2.0'
+  s.version          = '0.2.1'
   s.summary          = '集成餐饮云收银台付款'
 
 # This description is used to generate tags and improve search results.
@@ -39,7 +39,7 @@ Pod::Spec.new do |s|
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   s.dependency 'WechatOpenSDK'
-  s.dependency 'AliPay_SDK'
+  s.dependency 'AlipaySDK-iOS'
   s.dependency 'WebViewJavascriptBridge'
   
   s.static_framework = true #指定pod加静态库标签
